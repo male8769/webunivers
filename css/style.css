@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown styling */
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+.navbar ul ul li {
+    display: block;
+    width: 200px;
+}
+
+.navbar ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+/* Menu label styling (for mobile navigation) */
+#menu-bar {
+    display: none;
+}
+
+label[for="menu-bar"] {
+    display: none;
+    cursor: pointer;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Responsive design: Vis menu-label til små skærme */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-bar:checked ~ .navbar ul {
+        display: flex;
+    }
+
+    label[for="menu-bar"] {
+        display: block;
+    }
+
+    .navbar ul ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
