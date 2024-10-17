@@ -13,8 +13,15 @@
     <label for="menu-bar">Menu</label>
 
     <!-- Navbar med ul/li struktur -->
+
+
+
     <nav class="navbar">
-        <ul>
+
+        <!-- ul>li*5>a sådan laver man en genvej til at lave 5 lister med et anchor-->
+        <ul> 
+            <!-- her har jeg brugt a.logo til at lave en genvej til et anchor der hedder logo-->
+             <a href="#" class="logo">Artsy Space</a>
             <li><a href="#">Artsy Space</a></li>
 
             <li><a href="#">Om Os +</a>
@@ -57,52 +64,69 @@
     <section id="overskrift">
     <img src="img/blomster-logo-1.png" alt="blå blomster logo">
     <h1>Hjemmelavet Kunst og Dekorationer</h1>
-    <h2>skab dit eget personlige rum med DIY-projekter</h2>
+    <p>skab dit eget personlige rum med DIY-projekter</p>
     <img src="img/blomster-logo-1.png" alt="blå blomster logo">
 </section>
 
-<section id="2-artikler">
+<!--den første section med artikler-->
+
+<section class="artikler">
+    <article>
     <img src="img/collage.jpg" alt="billederamme med postkort">
-    <h3>DIY Vægkunst</h3>
+    <h2>DIY Vægkunst</h2>
+</article>
+<article>
     <img src="img/vindue-blomster.jpg" alt="blomster i en vinduskarm">
-    <h3>Bæredygtige DIY Dekorationer</h3>
+    <h2>Bæredygtige DIY Dekorationer</h2>
+</article>
 </section>
 
-<!-- jeg ville gerne have en knap her hvor der står "se brugerindsente billeder" -->
+<!--button som skal linkes til deltag-->
+<section class="button">
+    <a href="deltag"></a>
+<button>Se brugerindsente billeder</button>
+</section>
 
 <hr>
-
-<section id="3-artikler">
+<!--anden section med artikler-->
+<section>
+    <article>
     <img src="img/lys.jpg" alt="to lys set oppefra">
-    <h3>Bring hygge med Genbrug</h3>
+    <h2>Bring hygge med Genbrug</h2>
+</article>
+<article>
     <img src="img/mange-blomster-i-vaser.jpg" alt="mange blomster i vaser">
-    <h3>Skab noget farve med blomster</h3>
+    <h2>Skab noget farve med blomster</h2>
+</article>
+<article>
     <img src="img/maleri.jpg" alt="maleri med blomster">
-    <h3>Mal dit eget kunst</h3>
+    <h2>Mal dit eget kunst</h2>
+</article>
 </section>
-
 </main>
 
 <footer>
+    <section class="footer-left">
     <img src="img/blomster-logo-1.png" alt="blå blomster logo">
-
     <p>Artsy Space er et sted, hvor studerende kan komme for at få inspiration til hjemmet. Det er her, du kan finde billige og bæredygtige metoder til at dekorere og pynte dit hjem på budget.</p>
 
-    <h3>Deltag</h3>
+    <!--vend tilbage her til senere-->    
+    <form action="#">
+        <label for="email">Deltag</label>
+        <input type="email" id="email" placeholder="Skriv din email">
+        <button type="submit">→</button>
      <!-- her ville jeg gerne have et sted man kan skrive sin mail, eller blive send til deltag siden -->
-
-    <h3>Kontaktinformation</h3>
-<ul>
-    <li>Tlf: 00 00 00 00</li>
-    <li>Mail: god@mail.com</li>
-</ul>
-
-<h3>Følg os</h3>
-<ul>
-    <li>Facebook</li>
-    <li>Instagram</li>
-</ul>
-
+    </section>
+<section class="footer-right">
+    <p><strong>Kontaktinformation</strong></p>
+    <!--bruger address for at hjælpe SEO og brugervenlighed i stedet for min tidligere ul-->
+    <address>
+        <p>tlf: 00 00 00 00</p>
+        <p>Mail: god_mail.com</p>
+    </address>
+    <p><strong>Følg os</strong></p>
+    <p>facebook | Instagram</p>
+</section>
 </footer>
 
 </body>
