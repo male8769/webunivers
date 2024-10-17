@@ -21,17 +21,17 @@
         <!-- ul>li*5>a sådan laver man en genvej til at lave 5 lister med et anchor-->
         <ul> 
             <!-- her har jeg brugt a.logo til at lave en genvej til et anchor der hedder logo-->
-             <a href="#" class="logo">Artsy Space</a>
-            <li><a href="#">Artsy Space</a></li>
+             <li><a href="index.html" class="logo">Artsy Space</a>/li>
+            <li><a href="index.html">Artsy Space</a></li>
 
-            <li><a href="#">Om Os +</a>
+            <li><a href="navbar/om-os.html">Om Os +</a>
                 <ul>
                     <li><a href="#">Teamet bag</a></li>
                     <li><a href="#">Kontaktinformation</a></li>
                 </ul>
             </li>
 
-            <li><a href="#">DIY Projekter +</a>
+            <li><a href="navbar/diy-projekter.html">DIY Projekter +</a>
                 <ul>
                     <li><a href="#">Kategorier +</a>
                         <ul>
@@ -46,7 +46,7 @@
                 </ul>
             </li>
 
-            <li><a href="#">Fællesskab +</a>
+            <li><a href="navbar/faellesskab.html">Fællesskab +</a>
                 <ul>
                     <li><a href="#">Brugerindsendt +</a>
                         <ul>
@@ -56,7 +56,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Deltag</a></li>
+            <li><a href="navbar/deltag.html">Deltag</a></li>
         </ul>
     </nav>
 </header>
@@ -72,13 +72,13 @@
 
 <section class="artikler">
     <article>
-    <img src="img/collage.jpg" alt="billederamme med postkort">
-    <h2>DIY Vægkunst</h2>
-</article>
-<article>
-    <img src="img/vindue-blomster.jpg" alt="blomster i en vinduskarm">
-    <h2>Bæredygtige DIY Dekorationer</h2>
-</article>
+        <img src="img/collage.jpg" alt="billederamme med postkort">
+        <h2>DIY Vægkunst</h2>
+    </article>
+    <article>
+        <img src="img/vindue-blomster.jpg" alt="blomster i en vinduskarm">
+        <h2>Bæredygtige DIY Dekorationer</h2>
+    </article>
 </section>
 
 <!--button som skal linkes til deltag-->
@@ -106,17 +106,19 @@
 </main>
 
 <footer>
-    <section class="footer-left">
-    <img src="img/blomster-logo-1.png" alt="blå blomster logo">
-    <p>Artsy Space er et sted, hvor studerende kan komme for at få inspiration til hjemmet. Det er her, du kan finde billige og bæredygtige metoder til at dekorere og pynte dit hjem på budget.</p>
+       <section class="footer-left">
+        <img src="img/blomster-logo-1.png" alt="blå blomster logo">
+        <p>Artsy Space er et sted, hvor studerende kan komme for at få inspiration til hjemmet. Det er her, du kan finde billige og bæredygtige metoder til at dekorere og pynte dit hjem på budget.</p>
+    
+        <!--jeg tror jeg ender med ikke at sende dataen noget sted hend da jeg ikke har tid til at gøre det mere kompliceret-->    
+        <form action="#">
+            <label for="email">Deltag</label>
+            <input type="email" id="email" placeholder="Skriv din email">
+            <button type="submit">→</button>
+        </form> <!-- havde glemt lukning af form-->
+    </section> 
 
-    <!--vend tilbage her til senere-->    
-    <form action="#">
-        <label for="email">Deltag</label>
-        <input type="email" id="email" placeholder="Skriv din email">
-        <button type="submit">→</button>
-     <!-- her ville jeg gerne have et sted man kan skrive sin mail, eller blive send til deltag siden -->
-    </section>
+
 <section class="footer-right">
     <p><strong>Kontaktinformation</strong></p>
     <!--bruger address for at hjælpe SEO og brugervenlighed i stedet for min tidligere ul-->
