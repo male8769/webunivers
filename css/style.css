@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+primary color #B3DDF2
+secondary color #ddf4ff
+
 
 html {
     scroll-behavior: smooth;
@@ -12,19 +15,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    padding: 14px 20px;
-}
+
+
+/*styling for navbar*/
 
 .navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #333;
+    background-color:#B3DDF2;
     display: flex;
 }
 
@@ -36,11 +35,11 @@ body {
     display: block;
     padding: 14px 20px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .navbar ul li a:hover {
-    background-color: #575757;
+    background-color: #B3DDF2;
 }
 
 /* Dropdown styling */
@@ -49,7 +48,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #ddf4ff;
 }
 
 .navbar ul ul li {
@@ -70,34 +69,5 @@ body {
 #menu-bar {
     display: none;
 }
-
-label[for="menu-bar"] {
-    display: none;
-    cursor: pointer;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    font-size: 18px;
-}
-
-/* Responsive design: Vis menu-label til små skærme */
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-    }
-
-    #menu-bar:checked ~ .navbar ul {
-        display: flex;
-    }
-
-    label[for="menu-bar"] {
-        display: block;
-    }
-
-    .navbar ul ul {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
+   
 }
