@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-primary color #B3DDF2
-secondary color #ddf4ff
-
+:root {
+    --primary-color: #B3DDF2;   
+    --secondary-color: #ddf4ff; 
+    --tertiary-color: aliceblue; 
+}
 
 html {
     scroll-behavior: smooth;
@@ -18,13 +19,29 @@ body {
 
 
 /*styling for navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:var(--primary-color);
+    padding: 0 20px;
+    position: relative;
+    /*prøv at gøre navbaren sticky hvis du husker det*/
 
+}
 .navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color:#B3DDF2;
+    background-color:var(--primary-color);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-right: 550px; /*jeg ved godt at det ikke har fixet mit problem, men nu står det i midten når man har hele side åben, og jeg kan ikke finde en anden løsning lige nu*/
 }
 
 .navbar ul li {
@@ -37,9 +54,17 @@ body {
     text-decoration: none;
     color: black;
 }
+.navbar ul li:first-child{
+    margin-right: auto;
+} 
 
 .navbar ul li a:hover {
-    background-color: #B3DDF2;
+    background-color:var(--primary-color);
+}
+.logo{
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 /* Dropdown styling */
@@ -48,7 +73,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ddf4ff;
+    background-color: var(--secondary-color);
 }
 
 .navbar ul ul li {
@@ -71,13 +96,170 @@ body {
 }
 
 
+/*index.html*/
+.index-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+.index-header{
+  flex-direction: column; /*ved ikke helt om det er rigtigt men jeg for se*/ 
+  display: flex;
+    justify-content: space-between;
+}
+
+.index-main img{
+width: 100%;
+max-width: 200px;
+}
+#overskrift {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blomst-container {
+    display: flex;               
+    align-items: center;        
+    justify-content: space-between; 
+}
+
+.text-container {
+    text-align: center;         
+    margin: 0 20px;            
+}
+
+#overskrift h1 {
+    font-size: 2.5rem;
+    color: #5182a5;
+}
+
+#overskrift p {
+    font-size: 1.2rem;
+    color: #5182a5;
+}
+
+#blomst-1, #blomst-2 {
+    width: 100px;              
+    height: auto; 
+    margin: auto;
+    display: flex;
+                 
+}
+
+
+/*første 2 artikler*/
+.artikler {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.artikler article {
+    flex: 1 1 45%; 
+    text-align: center; 
+}
+
+.artikler img {
+    max-width: 100%; 
+    height: 600px; 
+    padding: 30px;
+    border-radius: 100px;
+}
+
+.artikler h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #5182a5;
+}
+
+/*button*/
+.button button{
+    background-color:var(--primary-color);
+    border: none;
+    color: #5182a5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+
+}
+.button button:hover {
+    background-color: #A0C8E4;
+}
+
+
+
+
+/*footer*/
+footer {
+    background-color: #B3DDF2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right {
+    max-width: 45%; /* Allows for responsive design */
+}
+
+.footer-left img {
+    width: 100%;
+    max-width: 150px; /* Adjust logo size */
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.footer-left button {
+    background-color: #B3DDF2; /* Primary color */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-left button:hover {
+    background-color: #A0C8E4; /* Darker shade on hover */
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+
+
+
+/* deltag.html*/
+
+/* Styling for deltag.html body section */
 .deltag-body{
     background-color: aliceblue;
 }
 /* Styling for deltag.html main section */
 
 .deltag-main {
-    background-color: #ddf4ff;
+    background-color:var(--secondary-color);
     padding: 20px; 
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
