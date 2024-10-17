@@ -6,7 +6,7 @@
     <title>Deltag</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="deltag-body">
     <header>
         <nav class="navbar">
 
@@ -58,16 +58,19 @@
 
 
 <form action="#" class="kontakt-form">
-    <label for="fornavn">Fornavn</label>
-    <input type="fornavn" name="fnavn" id="fnavn" required>
-    <label for="efternavt">Efternavn</label>
-    <input type="efternav" name="enavn" id="enavn" required>
+    <label for="fnavn">Fornavn</label>
+    <input type="text" name="fnavn" id="fnavn" required>
+    
+    <label for="enavn">Efternavn</label>
+    <input type="text" name="enavn" id="enavn" required>
+    
     <label for="mail">Email</label>
-    <input type="mail" name="mail" id="mail" required>
+    <input type="email" name="mail" id="mail" required>
 
     <label for="kommentar">Kommentar</label>
     <textarea name="kommentar" id="kommentar" placeholder="Skriv en kommentar her..." required></textarea>
-<button type="submit">Send kommentar</button>
+    
+    <button type="submit">Send kommentar</button>
 </form>
 
 </main>
